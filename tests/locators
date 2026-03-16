@@ -1,0 +1,54 @@
+//1) if Id is present
+//css -> tagname#id (or) #id
+
+//2) if class attribute is present
+//css -> tagname.class (or) .class
+
+//3) Write css based on any Attribute
+//css -> [attribute='value']
+
+//4) Write css traversing from parent to child
+//css -> parenttagname >> childtagname
+
+//5) If needs to write the locator based on text
+//text=' '
+
+//npx playwright test tests/llc.spec.js
+//npx playwright test --ui 
+//npx playwright test tests/llc.spec.js --debug
+
+//npx playwright codegen https://rahulshettyacademy.com/angularpractice/
+
+//for JavaScript file run command : 
+node basics1.js
+
+// for Typescript file run command : 
+node demo1.ts
+tsc demo1.ts
+ npm install --save-dev typescript
+
+//for custom config file 
+--config playwright.config1.js
+
+//for running parallel in 1 spec file
+test.describe.configure({mode:'parallel'});
+test.describe.configure({mode:'serial'});
+
+//for tag command
+--grep @Web
+
+//for Allure Report
+
+npm i -D @playwright/test allure-playwright
+
+//for html report
+npx playwright show-report
+
+MCP server
+The Playwright Model Context Protocol (MCP) server is a powerful solution for automating Browser and API testing using Playwright.
+
+//playwright Agents
+Playwright comes with three Playwright Test Agents out of the box: 1) planner, 2) generator and 3) healer.
+1) planner explores the app and produces a Markdown test plan
+2) generator transforms the Markdown plan into the Playwright Test files
+3) healer executes the test suite and automatically repairs failing tests
